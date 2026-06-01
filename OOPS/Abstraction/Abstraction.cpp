@@ -13,7 +13,6 @@ class Car{
         virtual void stopEngine() = 0;
         virtual ~Car(){};
 };
-
 class SportsCar : public Car{
     public:
         string brand;
@@ -70,7 +69,7 @@ class SportsCar : public Car{
 int main(){
 
     Car* myCar = new SportsCar("Ford", "Mustang");
-
+    
     myCar->startEngine();
     myCar->shiftGear(1);
     myCar->accelerate();
