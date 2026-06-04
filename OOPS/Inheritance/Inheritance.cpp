@@ -39,6 +39,7 @@ class Car{
         }
         virtual ~Car(){}
 };
+
 class ManualCar:public Car{
     // inherit from car
     private:
@@ -70,7 +71,7 @@ class ElectricCar:public Car{
 
 int main(){
 
-    ManualCar* myManualCar = new ManualCar("Suzuki","WagonR");
+    // ManualCar* myManualCar = new ManualCar("Suzuki","WagonR");
     myManualCar->startEngine();
     myManualCar->shiftGear(2);
     myManualCar->accelerate();
